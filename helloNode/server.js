@@ -4,10 +4,9 @@ const fs = require("fs");
 const host = "localhost";
 const port = 8080;
 
+// Business logic & endpoints
 const server = http.createServer((request, response) => {
 
-  // Business logic & endpoints
-  
   // Home
   if (request.url === "/") {
     response.writeHead(200, { 'Content-Type': 'text/html' });

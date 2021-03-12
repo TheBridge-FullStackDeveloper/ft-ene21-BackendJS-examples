@@ -1,0 +1,179 @@
+/*
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+*/
+
+@keyframes giroDeLaMuerte {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: translate(120px, 160px) rotateX(180deg);
+  }
+  50% {
+    transform: none;
+  }
+  85% {
+    transform: scale(4);
+  }
+  100% {
+    transform: translate(120px, 160px) rotateX(180deg) scale(1);
+  }
+}
+
+#hw {
+  animation: giroDeLaMuerte 2s infinite;
+  /* animation-play-state: paused; */
+}
+
+/* #hw:hover {
+  animation-play-state: running;
+} */
+
+/* ------------------- MANJI STYLES ------------------- */ 
+
+table.manji {
+  border-collapse: collapse;
+}
+
+table.manji td {
+  width: 40px;
+  height: 40px;
+}
+
+table.manji td.with-color {
+  background-color: crimson;
+}
+
+/* ------------------- BASIC STYLES ------------------- */ 
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li.reverse {
+  background-color: black;
+}
+
+nav ul li.reverse a {
+  color: white;
+}
+
+#special {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ------------------- BOX MODEL ------------------- */ 
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header, footer {
+  background-color: brown;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+nav.mainMenu a {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 3%;
+  width: 26.9%;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 20s, color 0.5s;
+  transition-timing-function: cubic-bezier(0.53, 0.41, 0.41, 0.65);
+}
+
+nav.mainMenu a:hover {
+  background-color: white;
+  color: black;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  background-color: saddlebrown;
+  padding: 10px;
+  transition: transform 1s, background-color 1s;
+  transform: translate(-120px,-160px) rotateX(180deg);
+}
+
+.backtotop:hover {
+  background-color: slateblue;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 180px;
+  left: 240px;
+  background-color: chartreuse;
+}
+
+/* ------------------- FLEX MENU ------------------- */ 
+
+.flexMenu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexMenu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 2s;
+}
+
+.flexMenu a:hover {
+  color: red;
+}
+
+.flexMenu * {
+  background-color: #333;
+}
+
+.flexSubmenuParent {
+  position: relative;
+}
+
+.flexSubmenuParent > nav.flexSubmenu {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 18.286px;
+  left: 0;
+  transition: opacity 1s;
+}
+
+.flexSubmenuParent:hover > nav.flexSubmenu {
+  display: flex;
+  opacity: 1;
+}
+
