@@ -1,0 +1,26 @@
+{
+  "name": "ft-ene21-BackendJS-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "expressServer.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase": "^8.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBridge-FullStackDeveloper/ft-ene21-BackendJS-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBridge-FullStackDeveloper/ft-ene21-BackendJS-examples/issues"
+  },
+  "homepage": "https://github.com/TheBridge-FullStackDeveloper/ft-ene21-BackendJS-examples#readme"
+}

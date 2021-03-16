@@ -2,16 +2,15 @@
   "name": "hellonode",
   "version": "1.0.0",
   "description": "Hello Node Ultimate Package Worldwide",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Yo",
+  "author": "",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "moment": "^2.29.1"
   },
   "devDependencies": {
-    "jasmine": "^3.6.4"
   }
 }

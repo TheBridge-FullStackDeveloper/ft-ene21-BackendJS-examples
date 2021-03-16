@@ -1,6 +1,5 @@
 // 1) ------ Importar dependencias ------
 const express = require('express');
-const bodyParser = require('body-parser');
 const firebase = require('firebase');
 
 // 2) ------ Configuración inicial ------
@@ -24,8 +23,8 @@ const staticFilesPath = express.static(__dirname + '/public');
 server.use(staticFilesPath);
 
 // JSON support
-server.use(bodyParser.urlencoded({ extended: false }));
-server.use(bodyParser.json());
+server.use(express.urlencoded({ extended: true }));
+server.use(express.json());
 
 // -------------- API REST --------------
 
