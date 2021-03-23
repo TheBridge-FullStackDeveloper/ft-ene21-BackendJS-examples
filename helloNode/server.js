@@ -9,7 +9,10 @@ const server = http.createServer((request, response) => {
 
   // Home
   if (request.url === "/") {
-    response.writeHead(200, { 'Content-Type': 'text/html' });
+    response.writeHead(200, {
+      'Content-Type': 'text/html',
+      'Access-Control-Allow-Origin': '*'
+    });
     response.write('<h1>Welcome to my home</h1>');
     response.end();
   }

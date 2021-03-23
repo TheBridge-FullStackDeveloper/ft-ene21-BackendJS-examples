@@ -2,6 +2,8 @@
 const express = require('express');
 const firebase = require('firebase');
 
+require('dotenv').config();
+
 // 2) ------ Configuración inicial ------
 const server = express();
 const listenPort = process.argv[2] || process.env.PORT || 8080;
