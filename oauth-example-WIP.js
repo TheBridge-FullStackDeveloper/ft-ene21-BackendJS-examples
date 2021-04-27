@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const express = require('express');
 const cryptoRandomString = require('crypto-random-string');
+require('dotenv').config();
 
 const server = express();
 const listenPort = 8080;
@@ -12,9 +13,8 @@ server.use(staticFilesPath);
 server.use(express.urlencoded({ extended: true }));
 server.use(express.json());
 
-
-const githubClientID = '8d5d18ad901b0d97d0cd';
-const githubClientSecret = "436329e92b98aa89b0039b234c9845583694f860";
+const githubClientID = process.env.GITHUB_CLIENT_ID;
+const githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
 
 // This is the URL we'll send the user to first
 // to get their authorization

@@ -4,10 +4,10 @@
   "description": "",
   "main": "expressServer.js",
   "dependencies": {
+    "crypto-random-string": "^3.3.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "firebase": "^8.3.0",
-    "crypto-random-string": "^3.3.1",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {},
